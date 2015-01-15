@@ -1,0 +1,61 @@
+@font-face {
+	font-family: 'SanOleg';
+	src:url('../fonts/SanOleg.eot?-oqw5sd');
+	src:url('../fonts/SanOleg.eot?#iefix-oqw5sd') format('embedded-opentype'),
+		url('../fonts/SanOleg.woff?-oqw5sd') format('woff'),
+		url('../fonts/SanOleg.ttf?-oqw5sd') format('truetype'),
+		url('../fonts/SanOleg.svg?-oqw5sd#SanOleg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+i {
+	font-family: 'SanOleg';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon_san-09:before {
+	content: "\e609";
+}
+
+.icon_san-01:before {
+	content: "\e600";
+}
+
+.icon_san-02:before {
+	content: "\e601";
+}
+
+.icon_san-03:before {
+	content: "\e602";
+}
+
+.icon_san-04:before {
+	content: "\e603";
+}
+
+.icon_san-05:before {
+	content: "\e604";
+}
+
+.icon_san-06:before {
+	content: "\e605";
+}
+
+.icon_san-07:before {
+	content: "\e606";
+}
+
+.icon_san-08:before {
+	content: "\e607";
+}
+

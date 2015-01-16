@@ -143,9 +143,6 @@ HEADER
 }
 
 @media (max-width: 992px) {
-	.logo-header {
-		max-width: 130px;
-	}
 
 	.descript {
 		max-width: 260px;
@@ -157,6 +154,27 @@ HEADER
 	}
 }
 
+@media (max-width: 768px) {
+	.logo-header {
+		position: relative;
+	}
+
+	.descript {
+		max-width: none;
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.descript span {
+		text-align: center;
+	}
+
+	.header-tel {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+}
+
 
 
 /********************
@@ -165,7 +183,8 @@ SEC-1
 
 .sec-1 {
 	background: url(../img/plumber.jpg) no-repeat;
-	background: transparent;
+	background-attachment: fixed;
+
 }
 
 .sec-1 .overlay {
@@ -369,7 +388,8 @@ SEC-1
 	color: #2d3558;
 	text-align: center;
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
+	padding-bottom: 12px;
 }
 
 .sec-1-right-list li:after {
@@ -377,7 +397,7 @@ SEC-1
 	content: url(../img/sec-1-right-list-line.png);
 	left: 0;
 	right: 0;
-	top: 14px;
+	bottom: 0;
 }
 
 .sec-1-right-list li:last-child:after {
@@ -398,7 +418,6 @@ SEC-1
 	border: none;
 	border-bottom: 2px solid #2c6ebe;
 	border-radius: 15px;
-
 }
 
 .sec-1-btn .icon {
@@ -455,73 +474,31 @@ SEC-1
 }
 
 @media (max-width: 992px) {
-	.sec-1-citation {
-		margin-top: 50px;
-		max-width: 331px;
-	}
-
-	.sec-1-citation-img {
-		margin-right: auto;
-		margin-bottom: 19px;
-		margin-left: auto;
-		display: block;
-		float: none;
-	}
-
-	.sec-1-know-more {
-		margin-right: 0;
-		margin-bottom: 15px;
-	}
-
-	.sec-1-citation-txt:after {
-		position: absolute;
-		top: 0;
-		right: 0;
-		left: 0;
-		margin-right: auto;
-		margin-left: auto;
-		width: 0;
-		height: 0;
-		border-width: 0 13px 13px 13px;
-		border-style: solid;
-		border-color: transparent transparent #49a0fc transparent;
-	}
 
 	.button-txt {
 		top: 22px;
 		font-size: 24px;
 	}
+
+	.sec-1-right-top>.left {
+		width: 70%;
+		margin-right: 15px;
+	}
+
+	.sec-1-btn {
+		margin-bottom: 15px;
+	}
+
+	.rotenberg-info {
+		bottom: -35px;
+		border-radius: 5px;
+	}
+
 }
 
 @media (max-width: 768px) {
-	.logo-header {
-		position: relative;
-		max-width: 100px;
-	}
-
-	.descript {
-		max-width: none;
-		font-size: 36px;
-		text-align: center;
-	}
-
-	.descript span {
-		text-align: center;
-	}
-
-	.header-tel {
-		margin-bottom: 10px;
-		text-align: center;
-	}
-}
-
-@media (max-width: 370px) {
-	.sec-1-citation-txt p {
-		font-size: 18px;
-	}
-
-	.sec-1-citation-txt p:last-of-type {
-		font-size: 18px;
+	.rotenberg-info {
+		bottom: -75px;
 	}
 }
 
@@ -650,7 +627,7 @@ SEC-3
 
 .sec-3 {
 	background: url(../img/plumber.jpg) no-repeat;
-	background: transparent;
+	background-attachment: fixed;
 }
 
 .sec-3 .overlay {
@@ -1044,7 +1021,7 @@ SEC-6
 .sec-6 {
 	text-align: center;
 	background: url(../img/plumber.jpg) no-repeat;
-	background: transparent;
+	background-attachment: fixed;
 }
 
 .sec-6 .overlay {
@@ -1186,4 +1163,97 @@ FOOTER
 	.footer-tel {
 		text-align: center;
 	}
+}
+
+/********************
+MODAL
+********************/
+
+@media (min-width: 768px) {
+	.modal-dialog {
+		width: 480px;
+	}
+}
+
+.modal-backdrop.in {
+	opacity: 1;
+}
+
+.modal-backdrop {
+	background-color: transparent;
+	background-image: url(../img/bg-blue.jpg);
+	background-size: cover;
+}
+
+.modal-dialog {
+	padding-top: 10%;
+}
+
+.modal-header {
+	background-color: #dbfffc;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.modal-title {
+	font-family: 'bebas_neuebold';
+	font-size: 30px;
+	text-align: center;
+	color: #2d3558;
+}
+
+.modal-body {
+	padding: 20px;
+	background-color: #bcecfb;
+}
+
+.form-group {
+	position: relative;
+}
+
+.form-control {
+	height: 46px;
+	font-size: 16px;
+	border-color: #e5e5e5;
+	border-radius: 0;
+}
+
+.form-modal-btn {
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	width: 50%;
+	font-family: 'bebas_neuebold';
+	font-size: 32px;
+	color: #dcfffd;
+	background-color: #48a0fd;
+	border: none;
+}
+
+.modal-dialog .glyphicon {
+	position: absolute;
+	right: 0;
+	width: 30px;
+	width: 48px;
+	font-size: 18px;
+	line-height: 48px;
+	line-height: 44px;
+	text-align: center;
+	color: #555;
+	border-left: 1px solid #ccc;
+}
+
+.close {
+	position: relative;
+	margin-top: 10px;
+	margin-right: 30px;
+	font-size: 18px;
+	color: #fff;
+	opacity: .9;
+	text-shadow: none;
+}
+
+.close .glyphicon {
+	position: absolute;
+	right: -22px;
+	font-size: 18px;
 }

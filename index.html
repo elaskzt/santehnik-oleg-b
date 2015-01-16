@@ -38,7 +38,7 @@
 
   <!-- SEC-1 -->
 
-	<section class="sec-1" data-parallax="scroll" data-image-src="img/plumber.jpg" data-position="0 -50px">
+	<section class="sec-1" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="100">
     <div class="overlay">
       <div class="container">
         <div class="row">
@@ -65,7 +65,7 @@
               <li>механическая прочистка</li>
               <li>телеинспекция канализации</li>
             </ul>
-            <button class="sec-1-btn wow bounceIn" data-wow-delay="2.5s"><i class="icon icon_san-07"></i><span class="button-txt"><span>Вызвать сантехника</span> прямо сейчас!</span></button>
+            <button type="button" class="sec-1-btn wow bounceIn" data-wow-delay="2.5s" data-toggle="modal" data-target="#modalForm"><i class="icon icon_san-07"></i><span class="button-txt"><span>Вызвать сантехника</span> прямо сейчас!</span></button>
           </div>
           <div class="col-md-12 visible-md visible-lg">
             <svg id="svg-line" class="svg-line" xmlns="http://www.w3.org/2000/svg" width="940" height="4" viewBox="0 0 940 4">
@@ -107,7 +107,7 @@
 
   <!-- SEC-3 -->
 
-  <section class="sec-3 shadow" data-parallax="scroll" data-image-src="img/plumber.jpg" data-position="0 -50px">
+  <section class="sec-3 shadow" data-stellar-background-ratio="0.2" data-stellar-vertical-offset="200">
     <div class="overlay">
       <div class="container">
         <div class="row">
@@ -258,7 +258,7 @@
 
   <!-- SEC-6 -->
 
-  <section class="sec-6 shadow" data-parallax="scroll" data-image-src="img/plumber.jpg">
+  <section class="sec-6 shadow" data-stellar-background-ratio="0.2" data-stellar-vertical-offset="270">
     <div class="overlay">
       <div class="container">
         <div class="row">
@@ -313,17 +313,43 @@
                 <path d="M85.291 43.914c0.491-0.779 1.079-1.246 2.051-1.246c0.899 0 1.5 0.4 1.8 1.2 c0.396-0.744 1.092-1.199 2.051-1.199c1.031 0 2 0.6 2 1.93V49h-0.756v-4.197c0-0.961-0.492-1.465-1.428-1.465 c-1.115 0-1.715 0.756-1.715 1.883V49h-0.743v-4.139c0-0.936-0.36-1.523-1.355-1.523c-1.259 0-1.799 0.961-1.799 2.16V49h-0.756 v-6.166h0.708V43.914z"/>
               </g>
             </svg>
+            <a>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- MODAL -->
+
+  <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <button type="button" class="close" data-dismiss="modal">Вернуться назад<span class="glyphicon glyphicon-arrow-right"></span></button>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Вызвать сантехника прямо сейчас!</h4>
+        </div>
+        <div class="modal-body">
+          <form action="" class="form-modal">
+            <div class="form-group">
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+              <input type="text" class="form-control" placeholder="Имя">
+            </div>
+            <div class="form-group">
+              <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+              <input type="tel" class="form-control" placeholder="Телефон">
+            </div>
+            <button class="form-modal-btn" data-dismiss="modal">Вызвать</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
     <script src="js/vendor/jquery-1.11.1.min.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/wow.min.js"></script>
     <script src="js/vendor/vivus.min.js"></script>
-    <script src="js/vendor/parallax.min.js"></script>
-    <!-- <script src="js/vendor/skrollr.min.js"></script> -->
+    <script src="js/vendor/jquery.stellar.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

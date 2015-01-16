@@ -68,6 +68,10 @@ GENERAL
 	url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
 }
 
+html {
+	overflow-x: hidden;
+}
+
 p,
 h3,
 li,
@@ -182,10 +186,9 @@ SEC-1
 ********************/
 
 .sec-1 {
-	background: url(../img/plumber.jpg) no-repeat;
+	background: url(../img/plumber.jpg) center no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-
 }
 
 .sec-1 .overlay {
@@ -498,8 +501,14 @@ SEC-1
 }
 
 @media (max-width: 768px) {
+
+	.rotenberg-img {
+		margin-bottom: 15px;
+		margin-top: 25px;
+	}
 	.rotenberg-info {
-		bottom: -75px;
+		position: relative;
+		bottom: 0;
 	}
 }
 
@@ -627,9 +636,8 @@ SEC-3
 ********************/
 
 .sec-3 {
-	background: url(../img/plumber.jpg) no-repeat;
+	background: url(../img/plumber.jpg) center no-repeat;
 	background-attachment: fixed;
-	background-position: center top;
 }
 
 .sec-3 .overlay {
@@ -1022,9 +1030,8 @@ SEC-6
 
 .sec-6 {
 	text-align: center;
-	background: url(../img/plumber.jpg) no-repeat;
+	background: url(../img/plumber.jpg) center no-repeat;
 	background-attachment: fixed;
-	background-position: center top;
 }
 
 .sec-6 .overlay {

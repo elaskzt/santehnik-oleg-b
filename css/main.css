@@ -189,6 +189,8 @@ SEC-1
 	background: url(../img/plumber.jpg) center no-repeat;
 	background-attachment: fixed;
 	background-position: center;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .sec-1 .overlay {
@@ -638,6 +640,8 @@ SEC-3
 .sec-3 {
 	background: url(../img/plumber.jpg) center no-repeat;
 	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .sec-3 .overlay {
@@ -1032,6 +1036,8 @@ SEC-6
 	text-align: center;
 	background: url(../img/plumber.jpg) center no-repeat;
 	background-attachment: fixed;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 .sec-6 .overlay {

@@ -184,6 +184,7 @@ SEC-1
 .sec-1 {
 	background: url(../img/plumber.jpg) no-repeat;
 	background-attachment: fixed;
+	background-position: center;
 
 }
 
@@ -628,6 +629,7 @@ SEC-3
 .sec-3 {
 	background: url(../img/plumber.jpg) no-repeat;
 	background-attachment: fixed;
+	background-position: center top;
 }
 
 .sec-3 .overlay {
@@ -1022,6 +1024,7 @@ SEC-6
 	text-align: center;
 	background: url(../img/plumber.jpg) no-repeat;
 	background-attachment: fixed;
+	background-position: center top;
 }
 
 .sec-6 .overlay {

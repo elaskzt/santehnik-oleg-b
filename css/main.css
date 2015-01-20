@@ -109,6 +109,73 @@ footer {
 }
 
 
+
+/********************
+NAVBAR
+********************/
+
+.navbar {
+  background: #cad9de;
+  border-radius: 0;
+  margin-bottom: 0;
+  border: none;
+  border-bottom: 2px solid #dbfffc;
+}
+
+.navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.navbar-nav li {
+  margin-left: 10px;
+}
+
+.navbar-collapse {
+  text-align: center;
+}
+
+.navbar-nav a {
+  color: #2d3558;
+  font-family: 'helveticaneuecyrroman';
+  font-size: 16px;
+  text-align: center;
+  line-height: 1;
+}
+
+.navbar-nav>li>a {
+  padding: 5px 6px 5px 6px;
+  transition: all 0.2s ease-in-out;
+  margin-right: 2px;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+}
+
+.navbar .active {
+	color: #fff !important;
+  background-color: transparent!important;
+  border: 2px solid #fff!important;
+  border-radius: 40px!important;
+}
+
+.sticky  {
+  width: 100%;
+}
+
+.navbar-toggle .icon-bar {
+  background: #fff;
+  height: 3px;
+  width: 25px;
+}
+
+
 /********************
 HEADER
 ********************/
@@ -125,6 +192,7 @@ HEADER
 	left: 0;
 	margin-right: auto;
 	margin-left: auto;
+	z-index: 1010;
 }
 
 .descript {
@@ -992,7 +1060,7 @@ SEC-5
 
 .clients .active a::after {
 	position: absolute;
-	z-index: 667;
+	z-index: 65;
 	top: 0;
 	right: -10px;
 	width: 0;

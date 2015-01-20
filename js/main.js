@@ -47,17 +47,30 @@ $(document).ready(function() {
 
 	//Preload image
 
-	$.preloadImages = function() {
-	  for (var i = 0; i < arguments.length; i++) {
-	    $("<img />").attr("src", arguments[i]);
-	  }
-	}
+	// $.preloadImages = function() {
+	//   for (var i = 0; i < arguments.length; i++) {
+	//     $("<img />").attr("src", arguments[i]);
+	//   }
+	// }
 
-	$.preloadImages("./img/bg-blue.jpg");
+	// $.preloadImages("./img/bg-blue.jpg");
 
 
 	$(function () {
 	  $('[data-toggle="tooltip"]').tooltip()
 	})
+
+	$(function () {
+	   $('.navbar').stickyNavbar({
+	   	mobile: true,
+	   	zindex: 555
+	   });
+	});
+
+	$(document).ready(function () {
+		$(".navbar-nav li a").click(function(event) {
+		$(".navbar-collapse").collapse('hide');
+		});
+	});
 
  });

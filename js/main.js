@@ -55,4 +55,9 @@ $(document).ready(function() {
 
 	$.preloadImages("./img/bg-blue.jpg");
 
+
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	})
+
  });

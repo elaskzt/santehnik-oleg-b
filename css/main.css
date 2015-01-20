@@ -100,6 +100,14 @@ ul {
 	box-shadow: inset 0 0 10px 4px rgba(45,53,88,1);
 }
 
+section,
+header,
+footer {
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 
 /********************
 HEADER
@@ -386,6 +394,26 @@ SEC-1
 
 .sec-1-right-list {
 	margin-top: 29px;
+}
+
+.question-mark {
+	border-radius: 50%;
+	color: #fff;
+	padding: 1px 6px;
+	background-color: rgba(45,53,88,.9);
+}
+
+.tooltip  {
+	width: 100%;
+	font-size: 14px;
+}
+
+.tooltip.right .tooltip-arrow {
+	border-right-color:rgba(45,53,88,.9);
+}
+
+.tooltip-inner {
+	background-color: rgba(45,53,88,.9);
 }
 
 .sec-1-right-list li {

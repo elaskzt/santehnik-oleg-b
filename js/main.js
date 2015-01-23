@@ -40,7 +40,9 @@ $(document).ready(function() {
 	//Parallax
 
 	$(function(){
-		$.stellar();
+		$.stellar({
+			horizontalScrolling: false
+		});
 	});
 
 	//Preload image

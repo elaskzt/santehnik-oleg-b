@@ -108,8 +108,12 @@ footer {
 	margin-right: auto;
 }
 
-body{
+body {
   padding-right: 0 !important;
+}
+
+.order h2{
+	text-align: center;
 }
 
 

@@ -365,7 +365,7 @@
                 <span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
                 <input name="fieldphones" type="tel" class="form-control" placeholder="Телефон" required>
               </div>
-              <button type="submit" name="submit" class="form-modal-btn">Вызвать</button>
+              <input type="submit" name="submit" class="form-modal-btn" value="Вызвать"></input>
             </form>
           </div>
         </div>
